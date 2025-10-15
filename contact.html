@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport"content="width=device-width,initial-scale=1.0"/>
+         <link rel="icon" type="image/x-icon" href="C:\Users\malna\Desktop\zabi.jpg">
+        <title>Top Navigation Example</title>
+        <style>
+            body{
+                margin:0;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            .topnav{
+                 display: flex;
+                justify-content: flex-end;
+                overflow: hidden;
+                background-color:red;
+            }
+            .topnav a{
+                float:left;
+                color:blue;
+                text-align:center;
+                padding:14px 16px;
+                text-decoration:none;
+                font-size:17px;
+            }
+            .topnav a.hover{
+                background-color:greenyellow;
+                color:aqua;
+            }
+            .topnav a.active{
+                background-color:yellow;
+                color: antiquewhite;
+            }
+            .wrapper{
+                display:flex;
+                flex-wrap: wrap;
+                max-width: 900px;
+                margin:auto;
+                gap:20px;
+                justify-content: center;
+            }
+            .box{
+                flex:1;
+                background: #fff;
+                padding:25px;
+                border-radius: 8px;
+                box-shadow: 0 4px 1opx rgba(red, green, blue, alpha);
+                transition:transform 0.2s ease, box-shadow 0.2s ease;
+            }
+            .box:hover{
+                transform: translateY(-3px);
+                box-shadow: 0 6px 14px rgba(red, green, blue, alpha);
+            }
+            h2{
+                margin-top: 0;
+                margin-bottom: 15px;
+                text-align: center;
+                color:#007bff;
+            }
+            label{
+                display:block;
+                margin-top: 10px;
+                font-weight: bold;
+            }
+            input, textarea, button{
+                width: 100%;
+                padding: 10px;
+                margin-top: 5PX;
+                border: 1PX solid #CCC;
+                border-radius: 5px;
+            }
+            button{
+                background: #007bff;
+                color:#fff;
+                border: none;
+                cursor:pointer;
+                margin-top: 15px;
+                transition:background 0.2s ease;
+            }
+            button:hover{
+                background: #0056b3;
+            }
+            p{
+                margin: 10px 0;
+            }
+        </style>
+        </head>
+        <body>
+            <!-- Top Navigation Bar-->
+             <div class="topnav">
+                <a  href="top nav.html">Home</a>
+                <a href="About.html">About</a>
+                <a href="Academics.html">Academics</a>
+                 <a href="facilities.html">facilities</a>
+                 <a href="admission.html">admission</a>
+                <a href="gallery.html">gallery</a>
+                <a class="active"href="contact.html">contact</a>
+             </div>
+             <div class="wrapper">
+                <div class="box">
+                    <h2>Contact Information</h2>
+                    <p><strong>Address</strong>-India</p>
+                    <p><strong>Phone</strong>-+91 9876543210</p>
+                    <p><strong>Email</strong>-info@example.com</p>
+                    <p><strong>Open</strong>-Daily 11:00 AM- 11:00 PM</p>
+                    </div>
+                    <div class="box">
+                        <h2>Send a Message</h2>
+                        <form action="#" method="post">
+                            <label>Name</label>
+                            <input type="text" name="name" required/>
+                            <label>Email</label>
+                            <input type="email" name="email" required/>
+                            <label>Message</label>
+                            <textarea name="Message" rows="4" required></textarea>
+                            <button type="Submit">Send</button>
+                        </form>
+                    </div>
+             </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d968.1573004093507!2d75.56908657555152!3d13.921098134099502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbba980309ec6e3%3A0x3c7588ef72281c3!2sMalnad%20Institute%20of%20Skill%20Development%20and%20Technical%20Center!5e0!3m2!1sen!2sin!4v1758604209294!5m2!1sen!2sin" width="1900" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
+             <br>
+             <footer style="background:black;;color:bisque;padding:50px 0;font-family:Arial;">
+<div style="display:flex; justify-content: space-between; max-width:2500px; margin:auto;flex-wrap:wrap;">
+<!-- section 1:Logo + About  -->
+ <div style="flex:1;min-width:220px;padding:15px;">
+    <img src="https://cdn.shopify.com/s/files/1/0644/8339/3791/files/Logo-sabbia-e-mare-vettoriale-s.png?height=628&pad_color=ffffff&v=1655804857&width=1200" alt="Zabi Infotech" style="width:300px;margin-bottom:15px;">
+    <p>We Provide  Good solutions To Help Children Grow And Succeed In Their Life In This World.</p>
+    </div>
+
+    <!-- Section 2: Quick Links -->
+     <div style="flex:1;min-width:200px;padding:15px;">
+        <h3>Quick Links</h3>
+        <a href="#" style="color:blue;  text-decoration:none;">Home</a></p>
+             <a href="#" style="color:red; text-decoration:none;">Courses</a></p>
+              <a href="#" style="color:pink;  text-decoration:none;">Gallery</a></p>
+               <a href="#" style="color:gold;  text-decoration:none;">Contact</a></p>
+     </div>
+
+     <!-- Section 3:Contact Info -->
+      <div style="flex:1;min-width:200px;padding:15px;">
+        <h3>Contact</h3>
+        <p>Email:zabi7561@gamil.com</p>
+        <p>Phone:+91 7899917201</p>
+        <p><Address:Basavangudi 6th cross Shivamogga, Karnataka></p>   
+      </div>
+
+      <!-- Section 4: Social Media -->
+       <div style="flex:1; min-width:200px;padding:15px;">
+        <h3>Follow Us</h3>
+        <p>
+            <a href="#" style="color:blue; margin-right:10px; text-decoration:none;">Facebook</a><br>
+             <a href="#" style="color:red; margin-right:10px; text-decoration:none;">Instagram</a><br>
+              <a href="#" style="color:pink; margin-right:10px; text-decoration:none;">Linkedin</a><br>
+               <a href="#" style="color:gold; margin-right:10px; text-decoration:none;">Twitter</a><br>
+               </p>
+       </div>
+       </div>
+       <!-- Footer Buttom -->
+       <p style="text-align:center;margin-top:20px;border-top:1px solid brown;padding-top:10px;font-size:14px;">
+        @ 2025 ZABIULLA. All Rights Reserverd.
+       </p>
+</footer>
+</body>
+</html>
+
+        
