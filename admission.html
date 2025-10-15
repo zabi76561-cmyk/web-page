@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport"content="width=device-width,initial-scale=1.0"/>
+         <link rel="icon" type="image/x-icon" href="C:\Users\malna\Desktop\zabi.jpg">
+        <title>Top Navigation Example</title>
+        <style>
+            body{
+                margin:0;
+                font-family:Arial, Helvetica, sans-serif;
+                background-color: blanchedalmond;
+                padding: 0;
+            }
+            header{
+                background-color: bisque;
+                color:azure;
+                text-align: center;
+                padding:15px;
+            }
+            .topnav{
+                 display: flex;
+                justify-content: flex-end;
+                overflow: hidden;
+                background-color:red;
+            }
+            .topnav a{
+                float:left;
+                color:blue;
+                text-align:center;
+                padding:14px 16px;
+                text-decoration:none;
+                font-size:17px;
+            }
+            .topnav a.hover{
+                background-color:greenyellow;
+                color:azure
+                ;
+            }
+            .topnav a.active{
+                background-color:yellow;
+                color: antiquewhite;
+            }
+            .container{
+                max-width:700px;
+                margin:20px auto;
+                background:wheat;
+                padding:20px;
+                border:6px;
+            }
+            h2{
+                text-align: center;
+                color:brown;
+                margin-top: 0;
+            }
+            form{
+                display:flex;
+                flex-wrap: wrap;
+                gap:15px;
+            }
+            form div{
+                flex:1 1 45%;
+                display:flex;
+                flex-direction: column;
+            }
+            .full-width{
+                flex:1 1 100%;
+            }
+            label{
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+            input,select,textarea,button{
+                padding:8px;
+                border: 1px solid black;
+                border-radius: 4px;
+            }
+            button{
+                background:rebeccapurple;
+                color:chartreuse;
+                border:none;
+                cursor: pointer;
+                font-size: 10px;
+            }
+            button:hover{
+                background:#0056b3;
+            }
+            .declaration{
+                flex-direction: row;
+                align-items: center;
+            }
+            .declaration{
+                font-weight: normal;
+                margin-left:8px;
+            }
+        </style>
+        </head>
+        <body>
+            <!-- Top Navigation Bar-->
+             <div class="topnav">
+                <a  href="top nav.html">Home</a>
+                <a href="About.html">About</a>
+                <a href="Academics.html">Academics</a>
+                <a href="facilities.html">facilities</a>
+                <a class="active" href="admission.html">admission</a>
+                <a href="gallery.html">gallery</a>
+                
+                <a href="contact.html">contact</a>
+             </div>
+             <div class="container">
+                <h2>Application Form</h2>
+                <form>
+                    <div>
+                        <label>First Name</label><input type="text"required/>
+                    </div>
+                    <div>
+                        <label>Last Name</label>
+                        <input type="text"required/>
+                    </div>
+                    <div>
+                        <label>Date Of Birth</label><input type="date"required/>
+                    </div>
+                    <div>
+                        <label>Gender</label>
+                        <select required>
+                            <option value="">Select</option><option>Male</option>
+                            <option>Female</option><option>Others</option>
+                        </select>
+                    </div>
+                    <div class="full-width">
+                        <label>Address</label><textarea rows="3" required></textarea>
+                    </div>
+                    <div>
+                        <label>Phone</label><input type="tel"required/>
+                    </div>
+                    <div>
+                        <label>Email</label><input type="email"required/>
+                    </div>
+                    <div class="full-width">
+                        <label>Class/Courses Applying For</label>
+                        <select required>
+                            <option value="">Select</option>
+                            <option>Class 1</option><option>Class 2</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>Parent/Guardian Name</label><input type="text"required/>
+                    </div>
+                    <div>
+                        <label>Parent/Guardian Phone</label>
+                        <input type="tel"required/>
+                    </div>
+                    <div class="full-width">
+                        <label>Upload Photo(Passport size)</label><input type="file"required/>
+                    </div>
+                    <div class="full-width">
+                        <label>Upload Previous Marks Card/ID</label>
+                        <input type="file"/>
+                        </div>
+                        <div class="full-width">
+                            <label>Additional Information</label><textarea rows="3"></textarea>
+                            </div>
+                            <div class="full-width declaration">
+                                <input type="checkbox"required/><label>I Confirm That All The Information Provided Is Correct.</label>
+                                </div>
+                                <div class="full-width">
+                                    <button type="Submit">Submit Application</button>
+                                </div>
+                </form>
+                </div>
+               
+                <footer style="background:black;;color:bisque;padding:50px 0;font-family:Arial;">
+<div style="display:flex; justify-content: space-between; max-width:2500px; margin:auto;flex-wrap:wrap;">
+<!-- section 1:Logo + About  -->
+ <div style="flex:1;min-width:220px;padding:15px;">
+    <img src="https://cdn.shopify.com/s/files/1/0644/8339/3791/files/Logo-sabbia-e-mare-vettoriale-s.png?height=628&pad_color=ffffff&v=1655804857&width=1200" alt="Zabi Infotech" style="width:300px;margin-bottom:15px;">
+    <p>We Provide  Good solutions To Help Children Grow And Succeed In Their Life In This World.</p>
+    </div>
+
+    <!-- Section 2: Quick Links -->
+     <div style="flex:1;min-width:200px;padding:15px;">
+        <h3>Quick Links</h3>
+        <a href="#" style="color:blue;  text-decoration:none;">Home</a></p>
+             <a href="#" style="color:red; text-decoration:none;">Courses</a></p>
+              <a href="#" style="color:pink;  text-decoration:none;">Gallery</a></p>
+               <a href="#" style="color:gold;  text-decoration:none;">Contact</a></p>
+     </div>
+
+     <!-- Section 3:Contact Info -->
+      <div style="flex:1;min-width:200px;padding:15px;">
+        <h3>Contact</h3>
+        <p>Email:zabi7561@gamil.com</p>
+        <p>Phone:+91 7899917201</p>
+        <p><Address:Basavangudi 6th cross Shivamogga, Karnataka></p>   
+      </div>
+
+      <!-- Section 4: Social Media -->
+       <div style="flex:1; min-width:200px;padding:15px;">
+        <h3>Follow Us</h3>
+        <p>
+            <a href="#" style="color:blue; margin-right:10px; text-decoration:none;">Facebook</a><br>
+             <a href="#" style="color:red; margin-right:10px; text-decoration:none;">Instagram</a><br>
+              <a href="#" style="color:pink; margin-right:10px; text-decoration:none;">Linkedin</a><br>
+               <a href="#" style="color:gold; margin-right:10px; text-decoration:none;">Twitter</a><br>
+               </p>
+       </div>
+       </div>
+       <!-- Footer Buttom -->
+       <p style="text-align:center;margin-top:20px;border-top:1px solid brown;padding-top:10px;font-size:14px;">
+        @ 2025 ZABIULLA. All Rights Reserverd.
+       </p>
+</footer>
+</body>
+</html>

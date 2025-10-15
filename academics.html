@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport"content="width=device-width,initial-scale=1.0"/>
+         <link rel="icon" type="image/x-icon" href="C:\Users\malna\Desktop\zabi.jpg">
+        <title>Top Navigation Example</title>
+        <style>
+            body{
+                margin:0;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            .topnav{
+                 display: flex;
+                justify-content: flex-end;
+                overflow: hidden;
+                background-color:red;
+            }
+            .topnav a{
+                float:left;
+                color:blue;
+                text-align:center;
+                padding:14px 16px;
+                text-decoration:none;
+                font-size:17px;
+            }
+            .topnav a.hover{
+                background-color:greenyellow;
+                color:aqua;
+            }
+            .topnav a.active{
+                background-color:yellow;
+                color: antiquewhite;
+            }
+            .about-school{
+                padding: 50px 20px;
+                background: #f9f9f9;
+            }
+
+            .about-wrapper{
+            max-width: 1100px;
+            margin: auto;
+            display: flex; 
+            flex-wrap: wrap;
+            gap: 30px;
+            align-items: flex-start;
+        }
+
+.about-text{
+    flex: 1 1 500px;
+}
+
+.about-text h1,.about-text h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    color: #555;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.about-text ul {
+    padding-left: 20px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.about-text ul li {
+    margin-bottom: 8px;
+}
+
+.about-image {
+    flex: 1 1 400px;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(red, green, blue, alpha);
+}
+        </style>
+        </head>
+        <body>
+            <!-- Top Navigation Bar-->
+             <div class="topnav">
+                <a  href="top nav.html">Home</a>
+                <a href="about.html">About</a>
+                <a class="active"href="academics.html">Academics</a>
+                 <a href="facilities.html">facilities</a>
+                 <a href="admission.html">admission</a>
+                <a href="gallery.html">gallery</a>
+                <a href="contact.html">contact</a>
+             </div>
+             <section class="about-school">
+                <div class="about-wrapper">
+                    <div class="about-text">
+                        <h1>About Our School</h1>
+                        <p><strong>School</strong>A school is the educational institution designed to provide learning environments for the teaching of students, usually under the direction of teachers. Most countries have systems of formal education, which is sometimes compulsory. In these systems, students progress through a series of schools that can be built and operated by both government and private organization.</p>
+                        <p>In addition to these core schools, students in a given country may also attend schools before and after primary (elementary in the U.S.) and secondary (middle school in the U.S.) education.[3] Kindergarten or preschool provide some schooling to very young children (typically ages 3–5). University, vocational school, college, or seminary may be available after secondary school. A school may be dedicated to one particular field, such as a school of economics or dance.</p>
+                        <p>Non-government schools, also known as private schools,[4] may be required when the government does not supply adequate or specific educational needs. Other private schools can also be religious, such as Christian schools, gurukula (Hindu schools), madrasa (Arabic schools), hawzas (Shi'i Muslim schools), yeshivas (Jewish schools), and others; or schools that have a higher standard of education or seek to foster other personal achievements. Schools for adults include institutions of corporate training, military education and training, and business schools.</p>
+                        <h2>Our Mission</h2>
+                        <p>A mission  is a short statement of why an organization exists, what its overall goal is, the goal of its operations: what kind of product or service it provides, its primary customers or market, and its geographical region of operation.[1][2] It may include a short statement of such fundamental matters as the organization's values or philosophies, a business's main competitive advantages, or a desired future state—the "vision".</p>
+                        <h2>Our Vission</h2>
+                        <p>According to Merriam-Webster, vision is defined as, “the act of power of imagination.”  When you apply vision to the future, you can create a mental picture that can be used to direct your actions. Vision serves as a guide and can be used to provide a sense of purpose.</p>
+                        <h2>Core values</h2>
+                        <ul>
+                            <li>Integrity and Respect</li>
+                            <li>Academic Excellence</li>
+                            <li>Creativity and Innovation</li>
+                            <li>Community and service</li>
+                            <li>Environmental Responsibility</li>
+                        </ul>
+                    </div>
+                    <div class="about-image">
+                    <img src="C:\Users\malna\Desktop\OIP (4).jpg" alt="Students Learning"/>
+                </div>
+                </div>
+             </section>
+             <footer style="background:black;;color:bisque;padding:50px 0;font-family:Arial;">
+<div style="display:flex; justify-content: space-between; max-width:2500px; margin:auto;flex-wrap:wrap;">
+<!-- section 1:Logo + About  -->
+ <div style="flex:1;min-width:220px;padding:15px;">
+    <img src="https://cdn.shopify.com/s/files/1/0644/8339/3791/files/Logo-sabbia-e-mare-vettoriale-s.png?height=628&pad_color=ffffff&v=1655804857&width=1200" alt="Zabi Infotech" style="width:300px;margin-bottom:15px;">
+    <p>We Provide  Good solutions To Help Children Grow And Succeed In Their Life In This World.</p>
+    </div>
+
+    <!-- Section 2: Quick Links -->
+     <div style="flex:1;min-width:200px;padding:15px;">
+        <h3>Quick Links</h3>
+        <a href="#" style="color:blue;  text-decoration:none;">Home</a></p>
+             <a href="#" style="color:red; text-decoration:none;">Courses</a></p>
+              <a href="#" style="color:pink;  text-decoration:none;">Gallery</a></p>
+               <a href="#" style="color:gold;  text-decoration:none;">Contact</a></p>
+     </div>
+
+     <!-- Section 3:Contact Info -->
+      <div style="flex:1;min-width:200px;padding:15px;">
+        <h3>Contact</h3>
+        <p>Email:zabi7561@gamil.com</p>
+        <p>Phone:+91 7899917201</p>
+        <p><Address:Basavangudi 6th cross Shivamogga, Karnataka></p>   
+      </div>
+
+      <!-- Section 4: Social Media -->
+       <div style="flex:1; min-width:200px;padding:15px;">
+        <h3>Follow Us</h3>
+        <p>
+            <a href="#" style="color:blue; margin-right:10px; text-decoration:none;">Facebook</a><br>
+             <a href="#" style="color:red; margin-right:10px; text-decoration:none;">Instagram</a><br>
+              <a href="#" style="color:pink; margin-right:10px; text-decoration:none;">Linkedin</a><br>
+               <a href="#" style="color:gold; margin-right:10px; text-decoration:none;">Twitter</a><br>
+               </p>
+       </div>
+       </div>
+       <!-- Footer Buttom -->
+       <p style="text-align:center;margin-top:20px;border-top:1px solid brown;padding-top:10px;font-size:14px;">
+        @ 2025 ZABIULLA. All Rights Reserverd.
+       </p>
+</footer>
+</body>
+</html>
+    
+
+        
